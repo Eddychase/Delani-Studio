@@ -1,41 +1,30 @@
 (document).ready(function(){
 
-  $(".Hover").hover(function(){
-    $(this).animate({opacity:'1'});
-  },
-  function(){
-    $(this).animate({opacity:'0'});
-  })
-  $("button").click(function (omonge) {
-    var client = document.getElementById('Name Name').value;
-    alert(' Dear ' + ' esteemed ' + client + ' we have received your message successful. ' + ' Feel free to reach out to us anytime');
-    omonge.preventDefault();
-  });
-  $("button").on('click', function () {
-    $('form').each(function () {
-      this.reset();
-    });
-  });
-  $('.main').click(function () {
-    $(this).children('.hide').slideToggle(1200);
-    $(this).children('.show').toggle(1500);
-  });
-
- 
-
-  $("#interior").click(function(){
-    $("#design is visible").toggle();
-    $(".image hidden").toggle();
-  })
-
-  $("#development").click(function(){
-    $("#devimagevisible").toggle();
-    $(".hidevimage").toggle();
-  })
-
-  $("#productManagement").click(function(){
-    $("#prodmanvisible").toggle();
-    $(".hideprodman").toggle();
-  })
-})
+  $('.submit').click(function () {
+    var Name = $('#mce-FNAME').val();
+    var Email = $('#mce-EMAIL').val();
+    var Message = $('#mce-MESSAGE');
     
+    if (Name == '' || Email == '' || Message == '') {
+        alert('Please Fill in the form correctly!');
+    } else {
+        alert(' Greetings ' + Name + ' We have received your message. Thank you.');
+    }
+});
+
+  
+$("#design").click(function(){
+  $("#design-showing").toggle();
+  $(".hide-design-image").toggle();
+})
+
+$("#development").click(function(){
+  $("#development-showing").toggle();
+  $(".hide-development-image").toggle();
+})
+
+$("#productManagement").click(function(){
+  $("#product-management-showing").toggle();
+  $(".hide-product-management").toggle();
+})
+})
