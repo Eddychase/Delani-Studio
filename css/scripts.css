@@ -4,3 +4,68 @@
     text-align: center;
     color: white;
   }
+  .mouse{
+    display: block;
+    
+  }
+  h4{
+    text-align: center;
+    font-family: 'Merriweather', serif;
+  }
+  .services{
+    background-image:url(../images/s_image.jpg);
+    color: white;
+    text-align: center;
+  }
+  .contact{
+    background-image: url(../images/c_image.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:50vh;
+    background-color: transparent;
+   
+  }
+  .row{
+    padding:2%;
+  }
+  
+  .Hover{
+    opacity: 0;
+    
+    position: absolute;
+    top:25%;
+    bottom:25%;
+    left:25%;
+    right:25%; 
+  }
+  
+  .Footer{
+    text-align: center;
+    justify-content: center;
+  }
+  .aboutUs{
+    text-align: center;
+  }
+  .what-We-Do{
+    text-align: center;
+    padding-top: 40px;
+  }
+  .col-sm-12 col-md-6 col-lg-3{
+    padding:2px;
+    height: 280px;
+    max-width: 280px;
+  }
+  
+  textarea[type=text] {
+    background:transparent;
+  }
+  input[type=text] {
+    background:transparent;
+  }
+  .col-6{
+    color: white;
+  }
+  .hide {
+    display: none;
+  }
