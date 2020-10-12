@@ -1,7 +1,7 @@
 (document).ready(function(){
 
   $('.submit').click(function () {
-    var Name = $('#mce-FNAME').val();
+    var Name = $('#mce-NAME').val();
     var Email = $('#mce-EMAIL').val();
     var Message = $('#mce-MESSAGE');
     
