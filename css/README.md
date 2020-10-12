@@ -1,6 +1,6 @@
 # DELANI STUDIO
 #### This project creates a channel between clients and software developers, Monday 12 October 2020 
-#### By **OMONGE CALVINCE**&trade;
+#### By **EDWIN KANYOTU**&trade;
 
 ## Description
 This project is a showcase of what Delani studio is all about.It also allows users to subscribe to them.
