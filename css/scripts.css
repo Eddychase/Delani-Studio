@@ -22,7 +22,6 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height:50vh;
     background-color: transparent;
    
   }
@@ -62,9 +61,6 @@
   }
   input[type=text] {
     background:transparent;
-  }
-  .col-6{
-    color: white;
   }
   .hide {
     display: none;
