@@ -1,30 +1,13 @@
 (document).ready(function(){
-
-  $('.submit').click(function () {
-    var Name = $('#mce-NAME').val();
-    var Email = $('#mce-EMAIL').val();
-    var Message = $('#mce-MESSAGE');
-    
-    if (Name == '' || Email == '' || Message == '') {
-        alert('Please Fill in the form correctly!');
-    } else {
-        alert(' Greetings ' + Name + ' We have received your message. Thank you.');
-    }
+  
+  $('form#myForm').submit(function(){
+      var name = $('#name').val();
+      var pass = $('#email').val();
+      var mess = $('#mess').val();
+      alert("Hi " +name+ " we have received your message and we will get in touch. Thank you for contacting us.");
+    });
 });
 
+ 
+
   
-$("#design").click(function(){
-  $("#design-showing").toggle();
-  $(".hide-design-image").toggle();
-})
-
-$("#development").click(function(){
-  $("#development-showing").toggle();
-  $(".hide-development-image").toggle();
-})
-
-$("#productManagement").click(function(){
-  $("#product-management-showing").toggle();
-  $(".hide-product-management").toggle();
-})
-})
