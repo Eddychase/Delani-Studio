@@ -31,7 +31,8 @@
   
   .Hover{
     opacity: 0;
-    
+    color:white;
+    font-style: italic;
     position: absolute;
     top:25%;
     bottom:25%;
@@ -49,21 +50,20 @@
   .what-We-Do{
     text-align: center;
     padding-top: 40px;
+    
   }
   .col-sm-12 col-md-6 col-lg-3{
     padding:2px;
     height: 280px;
     max-width: 280px;
   }
+ 
   
   textarea[type=text] {
     background:transparent;
   }
   input[type=text] {
     background:transparent;
-  }
-  .col-6{
-    color: white;
   }
   .hide {
     display: none;
