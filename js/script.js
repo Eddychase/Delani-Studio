@@ -1,13 +1,22 @@
-(document).ready(function(){
-  
-  $('form#myForm').submit(function(){
-      var name = $('#name').val();
-      var pass = $('#email').val();
-      var mess = $('#mess').val();
-      alert("Hi " +name+ " we have received your message and we will get in touch. Thank you for contacting us.");
-    });
-});
+$(document).ready(function() {
 
+  $(".Hover").hover(function(){
+    $(this).animate({opacity:'1'});
+  })
  
 
-  
+  $("#design").click(function(){
+    $("#showDesign").toggle();
+    $(".hideDesign").toggle();
+  })
+
+  $("#development").click(function(){
+    $("#development-showing").toggle();
+    $(".hideDevelopment").toggle();
+  })
+
+  $("#productManagement").click(function(){
+    $("#showProductmanagement").toggle();
+    $(".hideProductmanagement").toggle();
+  })
+});
