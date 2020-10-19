@@ -6,10 +6,10 @@
   <title>Delina studios</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script src="js/script.js"></script>
   <link href="css/scripts.css" rel="stylesheet" type="text/css" media="all">
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-  <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="js/script.js"></script>
   <title>Delani Studio</title>
 </head>
 <body>
@@ -51,29 +51,29 @@
     <h4 style="text-align: center;">WHAT WE DO</h4>
       <div class="row">
         <div class="col-md-4" id="design">
-          <div class="hide-design-image">
+          <div class="hideDesign">
             <img src="./images/design_icon.png" alt="Delani's design icon.">
           </div>
             <h4>DESIGN</h4>
-            <p class="hide" id="design-showing">
+            <p class="hide" id="showDesign">
                 Our design practice offers a full range of services including brand strategy, interaction and visual design and user experience testing.
                 Throughout your project, our designers create and implement visual design and workflows, solicit user feedback and work with you to make sure what gets built is what is needed.</p>
         </div>
         <div class="col-md-4" id="development">
-          <div class="hide-development-image">
+          <div class="hideDevelopment">
               <img src="./images/dev_icon.png" alt="Delani's dev. icon.">
           </div>
             <h4>DEVELOPMENT</h4>
-            <p class="hide" id="development-showing">
+            <p class="hide" id="developmentshowing">
                 All engineers are fluent in the latest enterprise, mobile and web development technologies.
                 They collaborate with your team to write, and improve code on a daily basis, using proven practices such as test-driven development and pair programming.</p>
         </div>
         <div class="col-md-4" id="productManagement">
-          <div class="hide-product-management">
+          <div class="hideProductmanagement">
               <img src="./images/product_icon.png" alt="Delani's product.">
           </div>  
             <h4>PRODUCT MANAGEMENT</h4>
-            <p class="hide" id="product-management-showing">
+            <p class="hide" id="showProductmanagement">
                   Planning and development is iterative. Because we are constantly coding and testing, the products we build are always ready to go live. 
                   This iterative process allows for changes as business requirements evolve.</p>
         </div>
@@ -145,33 +145,23 @@
     <br>
     <div class="contactUs">
       <h4 style="text-align: center; color:white">CONTACT US</h4>
-         <form action="https://gmail.us4.list-manage.com/subscribe/post?u=c40818488e702cd7135824a2b&amp;id=9e32737afc" method="post" id="mc-embedded-subscribe-form contact" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-          <div class="row" id="contact-info-input">
-              <div class="col-6">
-                <div class="form-group">
-                  <label for="name"></label>
-                  <input type="text" name="NAME" class="required form-control" id="mce-NAME name" placeholder="Name...">
-
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="form-group">
-                  <label for="email"></label>
-                  <input type="text" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL email" placeholder="Email">
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="form-group">
-                <label for="message"></label>
-                <textarea type="text" name="MESSAGE" class="required form-control" id="mce-MESSAGE comment" cols="30" rows="10" placeholder="Your message here..."></textarea>
-              </div>
+      <form id="form">
+        <div class="row">
+            <div class="col-md-2 form"></div>
+            <input class="col-md-4 form-control name" type="text" id="name" name="name" placeholder="Name..." required>
+            <br><br>
+            <input class="col-md-4 form-control email" type="email" id="email" name="email" placeholder="Email..." required>
+            <div class="col-md-2">
             </div>
-          </div>
-          <div class="submit"><input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-         </form>
-  </div>
-  </div>
-  <br><br><br>
+        </div>
+        <div class="row input">
+            <div class="col-md-2"></div>
+            <textarea class="form-control col-md-8 text" rows="12" name="message" id="message" placeholder="Your message here..."></textarea>
+            <div class="col-md-2"></div>
+        </div>
+        <button class="btn btn-primary mx-auto d-block submit" id="okButton" type="submit">Submit</button>
+        <br>
+    </form>
   
   <div class="Footer" id="socialMediaIcon">
     <br><br>
@@ -196,7 +186,7 @@
     <p>DELANI STUDIO<br>2020</p>
   </div>
 </div>
-<script src="js/jquery-3.5.1.js"></script>
+
 
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
